@@ -177,6 +177,7 @@ header {
   display: block;
   margin: 0 auto;
   padding-bottom: 1rem;
+  cursor: pointer;
 }
 
 .document__add-text {
