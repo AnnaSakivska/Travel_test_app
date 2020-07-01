@@ -1,0 +1,15 @@
+html {
+  --background-primary_color: #fff;
+  --background-secondary_color: #eeeef1;
+  --backgorund: #f8f8f8;
+  --borders-color: #e3e7ed;
+
+  --main-text_color: #b0b3c2;
+  --primary-text_color: #292949;
+  --tertiary-text_color: #7b819a;
+}
+
+body {
+  --roboto-font: "Roboto", sans-serif;
+  --circular_atd-font: "Circular Std", sans-serif;
+}

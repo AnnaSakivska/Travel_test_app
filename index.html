@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/main.css" />
+    <title>Travel App</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <div class="container">
+        <div class="section-main">
+          <div class="section-main__description-wrapper">
+            <div class="section-main__description u-box-style"></div>
+            <div class="section-main__options u-box-style"></div>
+          </div>
+
+          <div class="section-main__travel travel-info u-box-style">
+            <div class="travel-info__nav-bar">
+              <ul>
+                <li class="travel-info__selected-option">
+                  <a href="#">Travel Documents</a>
+                </li>
+                <li class="travel-info__selected-option">
+                  <a href="#">Loyalty Programs</a>
+                </li>
+                <li class="travel-info__selected-option">
+                  <a href="#">Travel Preferences</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="travel-info__documents">
+              <div class="document">
+                <h2 class="document__country document__country--ukraine">
+                  Ukraine
+                </h2>
+                <span class="document__code">FJ22346</span>
+                <span class="document__date">April 25, 2020</span>
+              </div>
+
+              <div class="document">
+                <h2 class="document__country document__country--uk">
+                  United Kingdom
+                </h2>
+                <span class="document__code">FJ22346</span>
+                <span class="document__date">April 25, 2020</span>
+              </div>
+
+              <div class="document document__new">
+                <img
+                  class="document__new-passport-icon"
+                  src="src/imgs/new_passport.svg"
+                />
+                <span class="document__add-text">Add new passport</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

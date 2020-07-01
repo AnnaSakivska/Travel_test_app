@@ -1,0 +1,197 @@
+@import url("./fonts.css");
+@import url("./vars.css");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--main-text_color);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--roboto-font);
+  font-weight: normal;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 12rem;
+  background: var(--backgournd-primary_color);
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.04);
+}
+
+.main {
+  background: var(--backgorund);
+}
+
+.u-box-style {
+  background: #ffffff;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 121rem;
+  /* border: 1px solid black;  */
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+/* MAIN */
+
+/* STYLES OF SECTION-MAIN */
+
+.section-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-main__description-wrapper {
+  width: 41rem;
+}
+
+.section-main__description {
+  width: 100%;
+  height: 55.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-main__options {
+  width: 100%;
+  height: 16.1rem;
+  margin-bottom: 12rem;
+}
+
+/* STYLES OF TRAVEL-INFO */
+
+.travel-info {
+  min-width: 71rem;
+}
+
+.travel-info__nav-bar {
+  padding: 2.3rem 5rem 0 5rem;
+}
+
+.travel-info__nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #e9edf3;
+}
+
+.travel-info__nav-bar li {
+  padding: 0 2.6rem 2.1rem 2.6rem;
+  font-family: var(--circular_atd-font);
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.6rem;
+  line-height: 163.6%;
+}
+
+.travel-info__selected-option {
+  border-bottom: 2px solid #61dbb4;
+  margin-bottom: -1.5px;
+}
+
+/* STYLES OF DOCUMENTS */
+
+.travel-info__documents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.5rem 4rem;
+}
+
+.document {
+  width: 19.6rem;
+  height: 10rem;
+  padding: 2.2rem 0 2rem 2.5rem;
+  border: 1px solid var(--borders-color);
+  border-radius: 4px;
+
+  font-family: var(--roboto-font);
+  font-style: normal;
+  line-height: 2.3rem;
+  letter-spacing: 0.03em;
+}
+
+.document__country {
+  position: relative;
+  padding-left: 3.5rem;
+  padding-bottom: 1.2rem;
+
+  font-size: 14px;
+  color: var(--primary-text_color);
+}
+
+.document__country--ukraine::before {
+  content: url(./imgs/ukr_flag.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.document__country--uk::before {
+  content: url(./imgs/uk_flag.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.document__code {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--tertiary-text_color);
+  padding-right: 1.2rem;
+}
+
+.document__date {
+  font-size: 12px;
+  color: var(--main-text_color);
+}
+
+.document__new {
+  padding: 2.2rem 0 2rem 0;
+}
+
+.document__new-passport-icon {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.document__add-text {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: var(--main-text_color);
+}
+
+footer {
+  /* position: absolute; */
+  width: 100%;
+  height: 102px;
+  /* left: 0px;
+  top: 1006px; */
+
+  background: var(--background-secondary_color);
+}
