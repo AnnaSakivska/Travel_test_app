@@ -29,19 +29,19 @@
           <div class="section-main__travel travel-info u-box-style">
             <div class="travel-info__nav-bar">
               <ul>
-                <li class="travel-info__selected-option">
+                <li class="travel-info__selected-option" id="travel-documents">
                   <a href="#">Travel Documents</a>
                 </li>
-                <li>
+                <li id="loyalty-programs">
                   <a href="#">Loyalty Programs</a>
                 </li>
-                <li>
+                <li id="travel-preferences">
                   <a href="#">Travel Preferences</a>
                 </li>
               </ul>
             </div>
 
-            <div class="travel-info__documents">
+            <div class="travel-info__container">
               <div class="document">
                 <h2 class="document__country document__country--ukraine">
                   Ukraine
@@ -67,6 +67,81 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="new-passport-container">
+        <div class="new-passport new-passport__positioning u-box-style">
+          <div class="new-passport__header">
+            <h3 class="title-primary new-passport__title">Add new passport</h3>
+            <img
+              src="./src/imgs/close_icon.svg"
+              alt=""
+              class="new-passport__close"
+            />
+          </div>
+
+          <div class="new-passport__form form">
+            <form method="get" id="form" class="form__inputs">
+              <input
+                type="text"
+                class="form__input"
+                id="firstName"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                class="form__input"
+                id="lastName"
+                placeholder="Last Name"
+              />
+              <input
+                type="number"
+                class="form__input"
+                id="passportNumber"
+                placeholder="Passport Number"
+              />
+              <select
+                class="form__input"
+                name="country"
+                id="passport-country"
+                required
+              >
+                <option value="" disabled selected>Passport Country</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="uk">United Kingdom</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+              </select>
+              <input
+                type="text"
+                class="form__input"
+                id="something"
+                placeholder="Passport Expiration Date"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
+              />
+              <select
+                class="form__input"
+                name="nationality"
+                id="nationality"
+                required
+              >
+                <option value="" disabled selected>Nationality</option>
+                <option value="ukrainian">Ukrainian</option>
+                <option value="uk">United Kingdom</option>
+                <option value="usa">USA</option>
+                <option value="canadain">Canadian</option>
+              </select>
+            </form>
+          </div>
+          <button
+            type="submit"
+            form="form"
+            value="Submit"
+            class="form__submit title-primary"
+          >
+            Save
+          </button>
         </div>
       </div>
     </main>

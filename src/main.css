@@ -109,11 +109,16 @@ header {
 .travel-info__selected-option {
   border-bottom: 2px solid #61dbb4;
   margin-bottom: -1.5px;
+  color: var(--primary-text_color);
+}
+
+.travel-info__selected-option a {
+  color: var(--primary-text_color);
 }
 
 /* STYLES OF DOCUMENTS */
 
-.travel-info__documents {
+.travel-info__container {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -185,6 +190,107 @@ header {
   text-align: center;
   font-size: 13px;
   color: var(--main-text_color);
+}
+
+/* NEW PASSPORT AND FORM STILES */
+
+.new-passport-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* visibility: hidden; */
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.new-passport__positioning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new-passport {
+  width: 71rem;
+  height: 43.2rem;
+  background-color: var(--background-primary_color);
+}
+
+.new-passport__header {
+  position: relative;
+  height: 8rem;
+  width: 100%;
+  border-bottom: 1px solid #e9edf3;
+  padding: 2.7rem 0 2.7rem 5rem;
+}
+
+.title-primary {
+  font-family: var(--circular_atd-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 163.6%;
+  /* identical to box height, or 25px */
+
+  color: var(--primary-text_color);
+}
+
+.new-passport__close {
+  position: absolute;
+  top: 3.3rem;
+  right: 5rem;
+  cursor: pointer;
+}
+
+.form {
+  width: 100%;
+  padding: 4.5rem 5rem 0;
+}
+
+.form__input,
+.form__input::placeholder {
+  font-family: var(--roboto-font);
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 163.6%;
+  letter-spacing: 0.03em;
+  color: var(--main-text_color);
+}
+
+.form__inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  width: 29rem;
+  height: 4.2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 4rem;
+
+  border: 1px solid var(--borders-color);
+  border-radius: 4px;
+}
+
+.form__input:last-child {
+  margin-bottom: 5rem;
+}
+
+.form__submit {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--primary-button_color);
+  border: 1px solid var(--primary-button_color);
+  border-radius: 1px;
+
+  font-size: 16px;
+  color: var(--background-primary_color);
 }
 
 footer {

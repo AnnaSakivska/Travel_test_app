@@ -7,6 +7,8 @@ html {
   --main-text_color: #b0b3c2;
   --primary-text_color: #292949;
   --tertiary-text_color: #7b819a;
+
+  --primary-button_color: #61DBB4;
 }
 
 body {
