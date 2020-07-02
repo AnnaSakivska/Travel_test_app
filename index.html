@@ -42,28 +42,30 @@
             </div>
 
             <div class="travel-info__container">
-              <div class="document">
-                <h2 class="document__country document__country--ukraine">
-                  Ukraine
-                </h2>
-                <spa class="document__code">FJ22346</spa>
-                <span class="document__date">April 25, 2020</span>
-              </div>
+              <div class="documents-container">
+                <div class="document">
+                  <h2 class="document__country document__country--ukraine">
+                    Ukraine
+                  </h2>
+                  <spa class="document__code">FJ22346</spa>
+                  <span class="document__date">April 25, 2020</span>
+                </div>
 
-              <div class="document">
-                <h2 class="document__country document__country--uk">
-                  United Kingdom
-                </h2>
-                <span class="document__code">FJ22346</span>
-                <span class="document__date">April 25, 2020</span>
-              </div>
+                <div class="document">
+                  <h2 class="document__country document__country--uk">
+                    United Kingdom
+                  </h2>
+                  <span class="document__code">FJ22346</span>
+                  <span class="document__date">April 25, 2020</span>
+                </div>
 
-              <div class="document document__new">
-                <img
-                  class="document__new-passport-icon"
-                  src="src/imgs/new_passport.svg"
-                />
-                <span class="document__add-text">Add new passport</span>
+                <div class="document document__new">
+                  <img
+                    class="document__new-passport-icon"
+                    src="src/imgs/new_passport.svg"
+                  />
+                  <span class="document__add-text">Add new passport</span>
+                </div>
               </div>
             </div>
           </div>
@@ -84,27 +86,26 @@
             <form method="get" id="form" class="form__inputs">
               <input
                 type="text"
-                class="form__input"
+                class="form__input input"
                 id="firstName"
                 placeholder="First Name"
               />
               <input
                 type="text"
-                class="form__input"
+                class="form__input input"
                 id="lastName"
                 placeholder="Last Name"
               />
               <input
                 type="number"
-                class="form__input"
+                class="form__input input"
                 id="passportNumber"
                 placeholder="Passport Number"
               />
               <select
-                class="form__input"
+                class="form__input input"
                 name="country"
                 id="passport-country"
-                required
               >
                 <option value="" disabled selected>Passport Country</option>
                 <option value="ukraine">Ukraine</option>
@@ -114,14 +115,14 @@
               </select>
               <input
                 type="text"
-                class="form__input"
+                class="form__input input"
                 id="something"
                 placeholder="Passport Expiration Date"
                 onfocus="(this.type='date')"
                 onblur="(this.type='text')"
               />
               <select
-                class="form__input"
+                class="form__input input form__input-select"
                 name="nationality"
                 id="nationality"
                 required

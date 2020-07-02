@@ -48,7 +48,6 @@ header {
 
 .container {
   max-width: 121rem;
-  /* border: 1px solid black;  */
   margin: 0 auto;
   padding: 3rem;
 }
@@ -120,13 +119,20 @@ header {
 
 .travel-info__container {
   width: 100%;
+  padding: 0rem 4rem;
+}
+
+.documents-container {
+  width: 100%;
+  padding: 4.5rem 0;
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-  padding: 4.5rem 4rem;
+  justify-content: space-between;
 }
 
 .document {
+  position: relative;
   width: 19.6rem;
   height: 10rem;
   padding: 2.2rem 0 2rem 2.5rem;
@@ -139,12 +145,22 @@ header {
   letter-spacing: 0.03em;
 }
 
+.document:not(:last-child):hover::after,
+.preference__chosen-option:hover::after {
+  content: url(./imgs/close-in-circul.png);
+  position: absolute;
+  top: -0.7rem;
+  right: -0.7rem;
+  cursor: pointer;
+  display: block;
+}
+
 .document__country {
   position: relative;
   padding-left: 3.5rem;
   padding-bottom: 1.2rem;
 
-  font-size: 14px;
+  font-size: 1.4rem;
   color: var(--primary-text_color);
 }
 
@@ -164,13 +180,13 @@ header {
 
 .document__code {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: var(--tertiary-text_color);
   padding-right: 1.2rem;
 }
 
 .document__date {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: var(--main-text_color);
 }
 
@@ -188,7 +204,7 @@ header {
 .document__add-text {
   display: block;
   text-align: center;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: var(--main-text_color);
 }
 
@@ -199,7 +215,8 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
+  z-index: 3;
   /* visibility: hidden; */
   display: none;
   background-color: rgba(0, 0, 0, 0.3);
@@ -230,9 +247,8 @@ header {
   font-family: var(--circular_atd-font);
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 163.6%;
-  /* identical to box height, or 25px */
 
   color: var(--primary-text_color);
 }
@@ -249,7 +265,7 @@ header {
   padding: 4.5rem 5rem 0;
 }
 
-.form__input,
+.input,
 .form__input::placeholder {
   font-family: var(--roboto-font);
   font-style: normal;
@@ -266,14 +282,20 @@ header {
   flex-wrap: wrap;
 }
 
-.form__input {
+.input {
   width: 29rem;
   height: 4.2rem;
   padding: 1rem 2rem;
-  margin-bottom: 4rem;
-
   border: 1px solid var(--borders-color);
   border-radius: 4px;
+}
+
+.input:focus {
+  outline: 1px solid var(--primary-button_color);
+}
+
+.form__input {
+  margin-bottom: 4rem;
 }
 
 .form__input:last-child {
@@ -293,12 +315,113 @@ header {
   color: var(--background-primary_color);
 }
 
+.form__submit:focus {
+  outline: 2px solid #53b696;
+}
+
+/* STYLES OF TRAVEL-PREFERENCES OPTIONS */
+
+.preference {
+  width: 100%;
+}
+
+.preference__option-layout {
+  margin: 5rem 0 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preference__option-layout-2 {
+  margin: 5rem 0 4rem;
+  width: 100%;
+}
+
+.preference__title {
+  font-weight: 450;
+  font-size: 1.4rem;
+}
+
+.preference__chosen-options {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.preference__chosen-option {
+  position: relative;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  background: #f5f8fe;
+  border-radius: 4px;
+  margin-right: 1.5rem;
+
+  font-size: 1.3rem;
+  line-height: 163.6%;
+  letter-spacing: 0.03em;
+  color: #7b819a;
+}
+
+.preference__chosen-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.8rem;
+  border: 1px solid var(--borders-color);
+  border-radius: 5px;
+  padding: 1.7rem;
+  margin-bottom: 3.3rem;
+}
+
+.stars {
+  width: 9.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars__checkbox {
+  position: relative;
+  cursor: pointer;
+  width: 1.4rem;
+  height: 1.4rem;
+
+  border: 0.7px solid var(--tertiary-text_color);
+  border-radius: 2px;
+}
+
+.starst__checkbox-checked {
+  background-color: var(--primary-button_color);
+  border: 0.7px solid var(--primary-button_color);
+}
+
+.stars__checkbox::after {
+  content: url(./imgs/checked.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -45%);
+}
+
+.stars__container {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.star:not(:last-child) {
+  margin-right: 2px;
+}
+
 footer {
-  /* position: absolute; */
   width: 100%;
   height: 102px;
-  /* left: 0px;
-  top: 1006px; */
-
   background: var(--background-secondary_color);
 }
